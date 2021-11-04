@@ -1,0 +1,24 @@
+%buttons {
+  margin-top: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  background-color: #080a3c;
+  padding: 12px 18px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+%icon {
+  width: 85px;
+  height: 85px;
+  text-align: center;
+  font-size: 45px;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 22px;
+  transition: 0.5s;
+  background-color: #ffd7cb;
+  line-height: 85px;
+}
