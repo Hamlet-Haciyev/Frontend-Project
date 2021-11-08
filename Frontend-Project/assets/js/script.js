@@ -15,6 +15,14 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+let pricingBodyContentIntern = document.querySelectorAll(
+  ".pricing-body-content-inter"
+);
+let ourAmazing = document.getElementById("our-amazing");
+let ourAmazingcol4 = document.querySelectorAll(".col-4");
+let customPart4Item = document.querySelectorAll(".custom-part4-item");
+let monthly = document.getElementById("monthly");
+let yearly = document.getElementById("yearly");
 let part2 = document.getElementById("part-2");
 let part3 = document.getElementById("part-3");
 let customPart2Img = document.querySelector(".custom-part2-img");
@@ -25,5 +33,68 @@ window.addEventListener("scroll", (e) => {
   }
   if (window.pageYOffset > part3.getBoundingClientRect().top + 500) {
     customPart3Img.classList.add("show");
+  }
+});
+let li = document.querySelectorAll(".know-about-strax-list ul li");
+let accordionShow = () => {
+  for (let i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", (e) => {
+      e.preventDefault();
+      if (li[i].classList.contains("show")) {
+        li[i].classList.remove("show");
+        li[i].firstElementChild.lastElementChild.classList.remove("fa-minus");
+        li[i].firstElementChild.lastElementChild.classList.add("fa-plus");
+      } else {
+        for (let a = 0; a < li.length; a++) {
+          li[a].classList.remove("show");
+          li[a].firstElementChild.lastElementChild.classList.remove("fa-minus");
+          li[a].firstElementChild.lastElementChild.classList.add("fa-plus");
+        }
+        li[i].classList.add("show");
+        li[i].firstElementChild.lastElementChild.classList.remove("fa-plus");
+        li[i].firstElementChild.lastElementChild.classList.add("fa-minus");
+      }
+
+      console.log(li[i].lastElementChild);
+    });
+  }
+};
+accordionShow();
+
+yearly.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  monthly.style.color = "#8d8fb4";
+  monthly.style.backgroundColor = "#fff";
+  yearly.style.color = "#fff";
+  yearly.style.backgroundColor = "#080a3c";
+
+  for (let i = 0; i < pricingBodyContentIntern.length; i++) {
+    pricingBodyContentIntern[i].classList.add("active");
+  }
+  // pricingBodyContentIntern.classList.add("active");
+});
+monthly.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  yearly.style.color = "#8d8fb4";
+  yearly.style.backgroundColor = "#fff";
+  monthly.style.color = "#fff";
+  monthly.style.backgroundColor = "#080a3c";
+
+  for (let i = 0; i < pricingBodyContentIntern.length; i++) {
+    pricingBodyContentIntern[i].classList.remove("active");
+  }
+  // pricingBodyContentIntern.classList.remove("active");
+});
+let ms = 0.5;
+window.addEventListener("scroll", (e) => {
+  if (window.pageYOffset > ourAmazing.getBoundingClientRect().top + 1200) {
+    for (let i = 0; i < customPart4Item.length; i++) {
+      customPart4Item[i].style.bottom = "0";
+      // ourAmazingcol4[i].children[0].style.trasitionDelay = `${ms}s`;
+
+      ms += 0.5;
+    }
   }
 });

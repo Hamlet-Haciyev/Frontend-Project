@@ -22,3 +22,29 @@
   background-color: #ffd7cb;
   line-height: 85px;
 }
+
+%pricebtn {
+  text-decoration: none;
+  background-color: #080a3c;
+  color: white;
+  border: none;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
