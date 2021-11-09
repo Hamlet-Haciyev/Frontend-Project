@@ -98,3 +98,27 @@ window.addEventListener("scroll", (e) => {
     }
   }
 });
+
+let upRise = document.querySelector(".up-rise");
+let optionalBtn = document.querySelector(".others-options .optional-btn");
+window.addEventListener("scroll", (e) => {
+  if (window.pageYOffset > 150) {
+    document.querySelector(".navbar-area").classList.add("sticky");
+    optionalBtn.children[0].style.color = "#080a3c";
+    optionalBtn.style.border = "1px solid #080a3c";
+    optionalBtn.style.color = "#080a3c";
+  } else {
+    document.querySelector(".navbar-area").classList.remove("sticky");
+    optionalBtn.children[0].style.color = "#fff";
+    optionalBtn.style.border = "1px solid #fff";
+    optionalBtn.style.color = "#fff";
+  }
+  if (window.pageYOffset > 600) {
+    upRise.classList.add("active");
+  } else {
+    upRise.classList.remove("active");
+  }
+});
+upRise.addEventListener("click", (e) => {
+  window.scrollTo(0, 0);
+});

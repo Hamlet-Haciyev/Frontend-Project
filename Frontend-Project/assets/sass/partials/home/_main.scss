@@ -2,7 +2,6 @@
   background-color: #f8fbfa;
   padding-top: 100px;
   padding-bottom: 70px;
-
   .custom-items {
     transition: all 0.3s linear;
     background-color: #fff;
@@ -745,6 +744,47 @@
         -o-transform: translate(-50%, -50%);
       }
     }
+    .shape-1 {
+      position: absolute;
+      left: -30px;
+      top: -23px;
+      z-index: -1;
+      animation: shape1 10s linear infinite;
+    }
+    .shape-2 {
+      position: absolute;
+      right: -20px;
+      top: -30px;
+      z-index: -1;
+      animation: shape2 3s linear infinite;
+    }
+    .shape-3 {
+      position: absolute;
+      left: -40px;
+      bottom: -50px;
+      z-index: -1;
+      animation: shape3 3s linear infinite;
+    }
+
+    .shape-4 {
+      position: absolute;
+      right: -30px;
+      bottom: -30px;
+      z-index: -1;
+    }
+    .shape-5 {
+      position: absolute;
+      right: -60px;
+      bottom: -60px;
+      z-index: -2;
+    }
+    .shape-6 {
+      position: absolute;
+      left: -26px;
+      top: -22px;
+      animation: shape6 4s linear infinite;
+      z-index: -1;
+    }
   }
   .video-box-contact {
     max-width: 1000px;
@@ -847,6 +887,30 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  .shape-7 {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    left: 10%;
+    z-index: -1;
+    animation: shape7 4s linear infinite;
+  }
+  .shape-8 {
+    position: absolute;
+    left: 12%;
+    top: 60%;
+    z-index: -1;
+    transform: translateY(-60%);
+    animation: shape8 10s linear infinite;
+  }
+  .shape-9 {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    z-index: -1;
+    transform: translateY(-40%);
+    animation: shape9 15s linear infinite;
   }
 }
 #pricing {
@@ -1654,6 +1718,37 @@
         }
       }
     }
+    .shape-14 {
+      position: absolute;
+      left: 5%;
+      top: 0;
+      z-index: -1;
+      animation: shape14 5s linear infinite;
+    }
+    .shape-15 {
+      position: absolute;
+      right: 2%;
+      top: 4%;
+      z-index: -1;
+    }
+    .shape-16 {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    .shape-17 {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+    .shape-18 {
+      position: absolute;
+      right: 20%;
+      top: 32%;
+      z-index: -1;
+    }
   }
 }
 #our-loving-clients {
@@ -1713,7 +1808,49 @@
     }
   }
 }
-
+.up-rise {
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1%);
+  position: fixed;
+  bottom: -100px;
+  right: 15px;
+  color: #080a3c;
+  background-color: #fff;
+  z-index: 4;
+  width: 45px;
+  text-align: center;
+  height: 45px;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  font-size: 40px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  overflow: hidden;
+  &:hover {
+    background-color: #ff612f;
+    i {
+      color: #fff;
+    }
+  }
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    bottom: 15px;
+  }
+  i {
+    color: #080a3c;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 60%;
+    transform: translateY(-70%);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @keyframes ripple {
   0% {
     opacity: 1;
@@ -1738,5 +1875,104 @@
     -moz-transform: scale(2);
     -ms-transform: scale(2);
     -o-transform: scale(2);
+  }
+}
+@keyframes shape14 {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 6%;
+  }
+  100% {
+    left: 5%;
+  }
+}
+@keyframes shape7 {
+  0% {
+    top: 40%;
+  }
+  50% {
+    top: 41%;
+  }
+  100% {
+    top: 40%;
+  }
+}
+@keyframes shape8 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shape9 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shape6 {
+  0% {
+    left: -22px;
+  }
+
+  50% {
+    left: -14px;
+  }
+
+  100% {
+    left: -22px;
+  }
+}
+
+@keyframes shape2 {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes shape3 {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+@keyframes shape1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
