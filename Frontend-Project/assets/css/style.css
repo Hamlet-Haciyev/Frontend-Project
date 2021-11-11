@@ -1889,9 +1889,10 @@ body {
           justify-content: space-between;
 }
 
-#pricing .pricing-body .pricing-body-content .pricing-body-content-list ul li i {
+#pricing .pricing-body .pricing-body-content .pricing-body-content-list ul li i:nth-of-type(1) {
   color: #13c4a1;
   font-size: 14px;
+  margin-right: 5px;
 }
 
 #pricing .pricing-body .pricing-body-content .pricing-body-content-btn {
@@ -2000,6 +2001,38 @@ body {
 #pricing .pricing-body .pricing-body-content .pricing-body-content-inter.active {
   visibility: visible;
   bottom: 30px;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-btn #btn-2 {
+  background-color: #ff612f;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-btn #btn-2 i {
+  color: #080a3c;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-inter .pricing-body-content-btn #intern-btn-2 {
+  background-color: #ff612f;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-inter .pricing-body-content-btn #intern-btn-2 i {
+  color: #080a3c;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-btn #btn-3 {
+  background-color: #13c4a1;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-btn #btn-3 i {
+  color: #ff612f;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-inter .pricing-body-content-btn #intern-btn-3 {
+  background-color: #13c4a1;
+}
+
+#pricing .pricing-body .pricing-body-content .pricing-body-content-inter .pricing-body-content-btn #intern-btn-3 i {
+  color: #ff612f;
 }
 
 #meet-our-experts {

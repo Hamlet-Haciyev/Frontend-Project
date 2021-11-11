@@ -1046,9 +1046,10 @@
             color: #444683;
             display: flex;
             justify-content: space-between;
-            i {
+            i:nth-of-type(1) {
               color: #13c4a1;
               font-size: 14px;
+              margin-right: 5px;
             }
           }
         }
@@ -1153,6 +1154,53 @@
     }
   }
 }
+#pricing {
+  .pricing-body {
+    .pricing-body-content {
+      .pricing-body-content-btn {
+        #btn-2 {
+          background-color: #ff612f;
+          i {
+            color: #080a3c;
+          }
+        }
+      }
+      .pricing-body-content-inter {
+        .pricing-body-content-btn {
+          #intern-btn-2 {
+            background-color: #ff612f;
+            i {
+              color: #080a3c;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pricing-body {
+    .pricing-body-content {
+      .pricing-body-content-btn {
+        #btn-3 {
+          background-color: #13c4a1;
+          i {
+            color: #ff612f;
+          }
+        }
+      }
+      .pricing-body-content-inter {
+        .pricing-body-content-btn {
+          #intern-btn-3 {
+            background-color: #13c4a1;
+            i {
+              color: #ff612f;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 #meet-our-experts {
   padding-top: 100px;
   padding-bottom: 70px;

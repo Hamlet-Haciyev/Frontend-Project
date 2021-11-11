@@ -1,23 +1,31 @@
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 2,
-    },
-  },
-});
 let upRise = document.querySelector(".up-rise");
 let monthly = document.getElementById("monthly");
 let yearly = document.getElementById("yearly");
+let li = document.querySelectorAll(".know-about-strax-list ul li");
+let accordionShow = () => {
+  for (let i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", (e) => {
+      e.preventDefault();
+      if (li[i].classList.contains("show")) {
+        li[i].classList.remove("show");
+        li[i].firstElementChild.lastElementChild.classList.remove("fa-minus");
+        li[i].firstElementChild.lastElementChild.classList.add("fa-plus");
+      } else {
+        for (let a = 0; a < li.length; a++) {
+          li[a].classList.remove("show");
+          li[a].firstElementChild.lastElementChild.classList.remove("fa-minus");
+          li[a].firstElementChild.lastElementChild.classList.add("fa-plus");
+        }
+        li[i].classList.add("show");
+        li[i].firstElementChild.lastElementChild.classList.remove("fa-plus");
+        li[i].firstElementChild.lastElementChild.classList.add("fa-minus");
+      }
+
+      console.log(li[i].lastElementChild);
+    });
+  }
+};
+accordionShow();
 let pricingBodyContentIntern = document.querySelectorAll(
   ".pricing-body-content-inter"
 );
