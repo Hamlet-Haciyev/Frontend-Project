@@ -2,74 +2,6 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
 }
-// #custom-nav {
-//   margin-top: 17px;
-//   position: absolute;
-//   z-index: 6;
-//   width: 100%;
-
-//   .logo {
-//     display: flex;
-//     align-self: flex-start;
-//     align-items: end;
-//     height: 100%;
-//   }
-//   .custom-nav-links {
-//     height: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     align-items: end;
-//     ul {
-//       display: flex;
-//       list-style-type: none;
-//       justify-content: space-between;
-//       padding: 0;
-//       li {
-//         a {
-//           text-decoration: none;
-//           font-size: 15px;
-//           font-weight: 500;
-//           color: #4a6f8a;
-//           padding: 30px 0;
-//           margin-left: 13px;
-//           margin-right: 13px;
-//           font-size: 15px;
-//           font-family: "Poppins";
-//         }
-//       }
-//     }
-//   }
-//   .custom-nav-btn {
-//     display: inline-block;
-//     width: 100%;
-//     text-align: end;
-//     a {
-//       text-decoration: none;
-//       border-radius: 5px;
-//       text-decoration: none;
-//       font-family: "Poppins", sans-serif;
-//       display: inline-block;
-//       color: white;
-//       i {
-//         margin-right: 5px;
-//         font-size: 20px;
-//       }
-//       &:first-of-type {
-//         background-color: #13c4a1;
-//         margin-right: 20px;
-//         padding: 11px 27px;
-//       }
-//       &:last-of-type {
-//         background-color: transparent;
-//         color: white;
-//         border: 1px solid #fff;
-//         padding: 11px 27px;
-//       }
-//     }
-//   }
-// }
-
 .navbar-area {
   position: absolute;
   background-color: transparent;
@@ -245,6 +177,19 @@ body {
               visibility: visible;
               opacity: 1;
             }
+            .n-inner-1 {
+              .dropdown-menu {
+                left: -250px;
+                top: -20px;
+                opacity: 0;
+                visibility: hidden;
+              }
+
+              &:hover .dropdown-menu {
+                visibility: visible;
+                opacity: 1;
+              }
+            }
           }
           .n-5 {
             position: relative;
@@ -393,11 +338,65 @@ body {
       }
     }
   }
+
+  .owl-carousel {
+    position: relative;
+    .owl-nav {
+      display: none;
+    }
+    .owl-dots {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      .owl-dot {
+        display: inline-block;
+        &.active span {
+          background-color: #13c4a1;
+        }
+        span {
+          width: 10px;
+          height: 10px;
+          margin: 5px 7px;
+          background: #d6d6d6;
+          display: block;
+          transition: opacity 0.2s ease;
+          border-radius: 30px;
+          &:hover {
+            background-color: #13c4a1;
+          }
+        }
+      }
+    }
+  }
   .custom-banner-right {
     background-image: url("../img/banner-img1.jpg");
     height: 100vh;
     position: relative;
-    width: 100%;
+    width: 633px;
+    z-index: 4;
+    border-bottom-left-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .custom-banner-right-2 {
+    background-image: url("../img/banner-img2 (1).jpg");
+    height: 100vh;
+    position: relative;
+    width: 633px;
+    z-index: 4;
+    border-bottom-left-radius: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .custom-banner-right-3 {
+    background-image: url("../img/banner-img3.jpg");
+    height: 100vh;
+    position: relative;
+    width: 633px;
     z-index: 4;
     border-bottom-left-radius: 100px;
     background-repeat: no-repeat;
@@ -411,7 +410,7 @@ body {
     position: absolute;
     right: 35%;
     bottom: -25px;
-    z-index: 1;
+    z-index: 0;
     animation: shape19 7s linear infinite;
   }
   .shape-20 {
@@ -452,7 +451,14 @@ body {
     animation: shape26 5s linear infinite;
   }
 }
-
+@keyframes nav {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0;
+  }
+}
 @keyframes shape21 {
   0% {
     top: 50%;
@@ -464,7 +470,6 @@ body {
     top: 50%;
   }
 }
-
 @keyframes shape22 {
   0% {
     left: 5%;

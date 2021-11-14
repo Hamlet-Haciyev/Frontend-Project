@@ -1,0 +1,491 @@
+@media screen and (max-width: 1600px) and (min-width: 992px) {
+  .part-2-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .part-2-img .row .ui-ux-design .custom-part2-buttons .custom-btn {
+    font-size: 13px;
+    text-align: center;
+  }
+  #part-3 .custom-part3-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #part-3 .part-3-order-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #part-3::before {
+    display: none;
+  }
+  #part-3 .custom-part3-img {
+    margin-top: 40px;
+  }
+  #part-3 .custom-part3-img img {
+    height: auto;
+  }
+  #part-3 .ui-ux-design {
+    text-align: center;
+  }
+  #header .navbar-area .responsive-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1412px) and (min-width: 992px) {
+  .navbar-area #navbarSupportedContent {
+    margin-left: 173px;
+  }
+  .navbar-area.sticky {
+    position: fixed !important;
+    animation: nav 0.5s linear;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09%);
+    background-color: #fff;
+  }
+  #header .navbar-area .responsive-nav {
+    display: none;
+  }
+
+  #header .navbar-area {
+    position: relative;
+    background-color: #fff;
+  }
+  .shape-21 {
+    display: none;
+  }
+  .navbar-area .nav-strax-logo .navbar .mean-menu .navbar-nav .nav-item a {
+    margin-left: 6px;
+  }
+  #header .custom-banner-left {
+    padding-top: 205px;
+    padding-right: 100px;
+    padding-left: 85px;
+  }
+  #header .custom-banner-left h1 {
+    font-size: 40px;
+  }
+  .owl-item {
+    height: 800px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+  .owl-item .custom-banner-right {
+    height: 100%;
+  }
+  .owl-item .custom-banner-right-2 {
+    height: 100%;
+  }
+  .owl-item .custom-banner-right-3 {
+    height: 100%;
+  }
+  #header .navbar-area .nav-strax-logo {
+  }
+  #header .navbar-area .nav-strax-logo .navbar-brand {
+    padding: 0;
+    font-weight: 700;
+    font-size: 27px;
+  }
+  #header .navbar-area .nav-strax-logo #navbarSupportedContent {
+  }
+
+  #header #banner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .navbar-area .nav-strax-logo .navbar .mean-menu .others-options {
+    width: 25%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-area
+    .nav-strax-logo
+    .navbar
+    .mean-menu
+    .others-options
+    a:nth-of-type(2) {
+    display: none;
+  }
+  #info .custom-items h3 {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  #service-details .services-info .custom-col {
+    max-width: 38%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #contact .contact-wrapped .contact-wrapped-content p a {
+    font-size: 30px;
+  }
+  #support-mobile-app {
+    text-align: center;
+  }
+  #active-listening .shape-1 {
+    display: none;
+  }
+  #active-listening .shape-2 {
+    display: none;
+  }
+  #active-listening .shape-3 {
+    display: none;
+  }
+  #active-listening .shape-4 {
+    display: none;
+  }
+  #featured-by .owl-dots {
+    display: none;
+  }
+  #featured-by .owl-nav {
+    display: none;
+  }
+  #header .navbar-area {
+    border-bottom: 1px solid #eee;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+  }
+  #header .navbar-area.sticky {
+    position: fixed;
+    animation: nav 0.5s linear;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09%);
+    background-color: #fff;
+  }
+  #header .navbar-area .nav-strax-logo {
+    display: none;
+  }
+  #header .navbar-area .responsive-nav {
+    display: block;
+    position: relative;
+  }
+  #header .navbar-area .responsive-nav .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    width: 100%;
+  }
+  #header .navbar-area .responsive-nav .hamburger button i {
+    color: #080a3c;
+  }
+  #header .navbar-area .responsive-nav .main-menu {
+    position: absolute;
+    background: 0 0;
+    padding: 0;
+    z-index: 999;
+  }
+  #header .navbar-area .responsive-nav .main-menu #main-menu-navbar {
+    margin-top: 21px;
+    background: #fff;
+  }
+  #header
+    .navbar-area
+    .responsive-nav
+    .main-menu
+    #main-menu-navbar
+    .main-menu-navbar-list {
+    display: none;
+    font-size: 14px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 294px;
+    -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    border: none;
+    list-style-type: none;
+  }
+  #header
+    .navbar-area
+    .responsive-nav
+    .main-menu
+    #main-menu-navbar
+    .main-menu-navbar-list.active {
+    display: block !important;
+  }
+  #header
+    .navbar-area
+    .responsive-nav
+    .main-menu
+    #main-menu-navbar
+    .main-menu-navbar-list
+    li {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  #header
+    .navbar-area
+    .responsive-nav
+    .main-menu
+    #main-menu-navbar
+    .main-menu-navbar-list
+    li
+    a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 90%;
+    padding: 1em 5% 13px;
+    margin: 0;
+    text-align: left;
+    color: #677294;
+    border-top: 1px solid #dbeefd;
+  }
+  #header #banner .custom-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #header #banner .custom-banner .custom-banner-left {
+    padding: 100px 0;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #header #banner .custom-banner .custom-banner-left h1 {
+    font-size: 40px;
+  }
+  #header #banner .custom-banner .custom-banner-left p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #header #banner .custom-banner .custom-banner-right {
+    height: 450px;
+    width: 100%;
+    border-radius: 0;
+  }
+  #header #banner .custom-banner .custom-banner-right-2 {
+    height: 450px;
+    border-radius: 0;
+    width: 100%;
+  }
+  #header #banner .custom-banner .custom-banner-right-3 {
+    height: 450px;
+    border-radius: 0;
+    width: 100%;
+  }
+  #header #banner .shape-19 {
+    display: none;
+  }
+  #header #banner .shape-20 {
+    display: none;
+  }
+  #header #banner .shape-21 {
+    display: none;
+  }
+  #header #banner .shape-22 {
+    display: none;
+  }
+  #header #banner .shape-24 {
+    display: none;
+  }
+  #header #banner .shape-26 {
+    display: none;
+  }
+  #part-2 .container-fluid {
+    margin: 0;
+  }
+  #part-2 .row .ui-ux-design {
+    text-align: center;
+  }
+  #part-2 .row .ui-ux-design h2 {
+    font-size: 30px;
+  }
+  #part-2 .row .ui-ux-design p {
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  #part-2 .row .ui-ux-design .custom-part2-buttons .custom-btn {
+    font-size: 16px;
+    text-align: center;
+  }
+  #part-2 .row #ui-center-btn {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #part-2 .row .custom-part2-img {
+    display: inline-block;
+    text-align: center;
+  }
+  #part-3 .ui-ux-design {
+    text-align: center;
+  }
+  #part-3 .ui-ux-design p {
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  #part-3 .part-3-order-2 {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  #part-3 .part-3-order-1 {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  #know-about-strax .know-about-strax-header {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  #know-about-strax .know-about-strax-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #know-about-strax .know-about-strax-img {
+    text-align: center;
+  }
+  #support .shape-14 {
+    display: none;
+  }
+  #support .shape-15 {
+    display: none;
+  }
+  #support .shape-16 {
+    display: none;
+  }
+  #support .shape-17 {
+    display: none;
+  }
+  #support .shape-18 {
+    display: none;
+  }
+  #video-box .video-box-img .shape-1 {
+    display: none;
+  }
+  #video-box .video-box-img .shape-2 {
+    display: none;
+  }
+  #video-box .video-box-img .shape-3 {
+    display: none;
+  }
+  #video-box .video-box-img .shape-4 {
+    display: none;
+  }
+  #video-box .video-box-img .shape-5 {
+    display: none;
+  }
+  #video-box .video-box-img .shape-6 {
+    display: none;
+  }
+  #video-box .shape-7 {
+    display: none;
+  }
+  #video-box .shape-8 {
+    display: none;
+  }
+  #video-box .shape-9 {
+    display: none;
+  }
+  #footer {
+    text-align: center;
+  }
+  #footer .s-ul {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #part-3 .part-3-order-2 {
+    order: 2;
+  }
+  #part-3 .part-3-order-1 {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 776px) {
+  #header #banner .custom-banner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  #header #banner .custom-banner .custom-banner-left {
+    text-align: center;
+  }
+  #header #banner .shape-19 {
+    display: none;
+  }
+  #header #banner .shape-20 {
+    display: none;
+  }
+  #header #banner .shape-21 {
+    display: none;
+  }
+  #header #banner .shape-22 {
+    display: none;
+  }
+  #header #banner .shape-24 {
+    display: none;
+  }
+  #header #banner .shape-26 {
+    display: none;
+  }
+  #part-2 .ui-ux-design {
+    text-align: center;
+  }
+  #part-2 .ui-ux-design .custom-part2-buttons .custom-btn {
+    text-align: center;
+  }
+  #part-3 .ui-ux-design {
+    text-align: center;
+  }
+  #part-3 .ui-ux-design .custom-part2-buttons .custom-btn {
+    text-align: center;
+  }
+  #support .support-content {
+    padding: 30px 20px;
+  }
+  #support .support-content h2 {
+    font-size: 25px;
+  }
+  #footer .s-ul {
+    margin: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #meet-our-experts .meet-related-employee-img {
+    overflow: hidden;
+  }
+  #meet-our-experts ul {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translateX(-80px);
+    transform: translateX(-80px);
+  }
+}

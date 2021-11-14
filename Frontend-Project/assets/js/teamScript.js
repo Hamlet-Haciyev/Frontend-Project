@@ -8,7 +8,7 @@ $(".owl-carousel").owlCarousel({
       items: 1,
     },
     600: {
-      items: 2,
+      items: 1,
     },
     1000: {
       items: 2,
@@ -32,4 +32,12 @@ window.addEventListener("scroll", (e) => {
 });
 upRise.addEventListener("click", (e) => {
   window.scrollTo(0, 0);
+});
+
+let hamburgerBtn = document.querySelector(".hamburger-btn");
+let mainMenuNavbarList = document.querySelector(".main-menu-navbar-list");
+
+hamburgerBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainMenuNavbarList.classList.toggle("active");
 });

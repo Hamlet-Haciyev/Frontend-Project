@@ -1,3 +1,21 @@
+$(".custom-owl-carous").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  responsiveClass: true,
+  autoplay: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
 $(".owl-carousel").owlCarousel({
   loop: true,
   margin: 10,
@@ -9,13 +27,14 @@ $(".owl-carousel").owlCarousel({
       items: 1,
     },
     600: {
-      items: 2,
+      items: 1,
     },
     1000: {
       items: 2,
     },
   },
 });
+
 let pricingBodyContentIntern = document.querySelectorAll(
   ".pricing-body-content-inter"
 );
@@ -28,6 +47,9 @@ let part2 = document.getElementById("part-2");
 let part3 = document.getElementById("part-3");
 let customPart2Img = document.querySelector(".custom-part2-img");
 let customPart3Img = document.querySelector(".custom-part3-img");
+let supportBtn = document.querySelector(".support-btn");
+let supportInput = document.querySelector("#support-input");
+let supportForm = document.querySelector(".support-form");
 window.addEventListener("scroll", (e) => {
   if (window.pageYOffset > part2.getBoundingClientRect().top - 100) {
     customPart2Img.classList.add("show");
@@ -122,4 +144,84 @@ window.addEventListener("scroll", (e) => {
 });
 upRise.addEventListener("click", (e) => {
   window.scrollTo(0, 0);
+});
+supportBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  if (supportInput.innerHTML == "") {
+    supportForm.classList.add("translate");
+  }
+});
+let card1 = document.querySelector("#info  #card-1");
+let card2 = document.querySelector("#info  #card-2");
+let card3 = document.querySelector("#info  #card-3");
+let card4 = document.querySelector("#info  #card-4");
+window.addEventListener("scroll", (e) => {
+  if (window.pageYOffset > 150) {
+    card1.classList.add("show");
+    card2.classList.add("show");
+    card3.classList.add("show");
+    card4.classList.add("show");
+  }
+});
+let meetOurExperts = document.querySelector("#meet-our-experts");
+let meetCard1 = document.querySelector("#meet-our-experts  #meet-card-1");
+let meetCard2 = document.querySelector("#meet-our-experts  #meet-card-2");
+let meetCard3 = document.querySelector("#meet-our-experts  #meet-card-3");
+let meetCard4 = document.querySelector("#meet-our-experts  #meet-card-4");
+window.addEventListener("scroll", (e) => {
+  if (window.pageYOffset > 6000) {
+    meetCard1.classList.add("show");
+    meetCard2.classList.add("show");
+    meetCard3.classList.add("show");
+    meetCard4.classList.add("show");
+  }
+});
+
+let videoBoxContact = document.querySelector(".video-box-contact");
+let videoCard1 = document.querySelector(".video-box-contact  #video-card-1");
+let videoCard2 = document.querySelector(".video-box-contact  #video-card-2");
+let videoCard3 = document.querySelector(".video-box-contact  #video-card-3");
+let videoCard4 = document.querySelector(".video-box-contact  #video-card-4");
+window.addEventListener("scroll", (e) => {
+  if (window.pageYOffset > 4000) {
+    videoCard1.classList.add("show");
+    videoCard2.classList.add("show");
+    videoCard3.classList.add("show");
+    videoCard4.classList.add("show");
+  }
+});
+let haveAnyQuestion = document.querySelector(".have-any-question");
+
+window.addEventListener("scroll", (e) => {
+  if (window.pageYOffset > 4500) {
+    haveAnyQuestion.classList.add("active");
+  }
+});
+
+let ourAmazingSection = document.querySelector("#our-amazing");
+let ourAmazing1 = document.querySelector("#our-amazing #amazing-card-1");
+let ourAmazing2 = document.querySelector("#our-amazing #amazing-card-2");
+let ourAmazing3 = document.querySelector("#our-amazing #amazing-card-3");
+let ourAmazing4 = document.querySelector("#our-amazing #amazing-card-4");
+let ourAmazing5 = document.querySelector("#our-amazing #amazing-card-5");
+let ourAmazing6 = document.querySelector("#our-amazing #amazing-card-6");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 2000) {
+    ourAmazing1.classList.add("active");
+    ourAmazing2.classList.add("active");
+    ourAmazing3.classList.add("active");
+    ourAmazing4.classList.add("active");
+    ourAmazing5.classList.add("active");
+    ourAmazing6.classList.add("active");
+  }
+});
+
+let hamburgerBtn = document.querySelector(".hamburger-btn");
+let mainMenuNavbarList = document.querySelector(".main-menu-navbar-list");
+
+hamburgerBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainMenuNavbarList.classList.toggle("active");
 });

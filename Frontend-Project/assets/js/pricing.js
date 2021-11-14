@@ -71,3 +71,10 @@ monthly.addEventListener("click", (e) => {
   }
   // pricingBodyContentIntern.classList.remove("active");
 });
+
+let hamburgerBtn = document.querySelector(".hamburger-btn");
+let mainMenuNavbarList = document.querySelector(".main-menu-navbar-list");
+hamburgerBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  mainMenuNavbarList.classList.toggle("active");
+});

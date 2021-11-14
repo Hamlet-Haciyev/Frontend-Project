@@ -32,9 +32,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="navbar-area">
         <div class="nav-strax-logo">
           <div class="container">
@@ -48,7 +49,7 @@
               >
                 <ul class="navbar-nav">
                   <li class="nav-item n-1">
-                    <a href="#" class="nav-link"
+                    <a href="index.html" class="nav-link"
                       >Home
                       <i class="fas fa-chevron-down"></i>
                     </a>
@@ -78,10 +79,14 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="about.html" class="nav-link">About</a>
+                    <a href="about.html" target="_blank" class="nav-link"
+                      >About</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">Pricing</a>
+                    <a href="pricing.html" target="_blank" class="nav-link"
+                      >Pricing</a
+                    >
                   </li>
                   <li class="nav-item n-4">
                     <a href="#" class="nav-link"
@@ -89,13 +94,34 @@
                       <i class="fas fa-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li class="nav-item">
+                      <li class="nav-item n-inner-1">
                         <a
                           href="services-1.html"
                           target="_blank"
                           class="nav-link"
                           >Services</a
                         >
+                        <ul class="dropdown-menu">
+                          <li class="nav-item">
+                            <a href="" class="nav-link">Services Styles One</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="" class="nav-link">Services Styles Two</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="" class="nav-link"
+                              >Services Styles Three</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              href="single-service.html"
+                              target="_blank"
+                              class="nav-link"
+                              >Service Details</a
+                            >
+                          </li>
+                        </ul>
                       </li>
                       <li class="nav-item">
                         <a href="#" class="nav-link">Features</a>
@@ -106,7 +132,9 @@
                         >
                       </li>
                       <li class="nav-item">
-                        <a href="#" class="nav-link">Log In</a>
+                        <a href="login.html" target="_blank" class="nav-link"
+                          >Log In</a
+                        >
                       </li>
                       <li class="nav-item">
                         <a href="#" class="nav-link">Sign Up</a>
@@ -137,15 +165,13 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="contact.html" target="_blank" class="nav-link"
-                      >Contact</a
-                    >
+                    <a href="#" class="nav-link">Contact</a>
                   </li>
                 </ul>
                 <div class="others-options">
                   <a href="#" class="default-btn">
                     <i class="fab fa-gripfire"></i>
-                    Try It Free Now</a
+                    Get Started</a
                   >
                   <a href="#" class="optional-btn">
                     <i class="fal fa-sign-in"></i>
@@ -154,6 +180,32 @@
                 </div>
               </div>
             </nav>
+          </div>
+        </div>
+        <div class="responsive-nav">
+          <div class="container">
+            <div class="row">
+              <div class="main-menu" style="width: 80%">
+                <div class="hamburger pt-1">
+                  <button class="hamburger-btn">
+                    <i class="fas fa-bars"></i>
+                  </button>
+                </div>
+                <nav id="main-menu-navbar">
+                  <ul class="main-menu-navbar-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="logo">
+                <img src="assets/img/logo.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
